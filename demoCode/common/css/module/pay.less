@@ -1,0 +1,56 @@
+.ui-pay{
+  .title{background:#887c8f;color: #fff;text-align: center;line-height:50px;height:50px;font-size: 24px;font-weight: bold;   }
+  .ui-popbox{overflow:visible;}
+  .ui-popmain{.border-radius(5px);}
+  .btn-close{position:absolute;background: url("@{commonImgPath}/icon-pay-close.png") no-repeat;display: inline-block;width: 46px;height: 46px;right: -15px;top:-15px;}
+  .panel-pay{color:#444;font-size: 18px;text-align: center;width: 440px;margin: 0 auto;
+  	p{line-height: 36px;
+  		.num{color:#00c8ff;margin:0 6px;}
+  		.proportion{color:#ff6905;margin:0 6px;}
+  		.total{color:#ff6905;}
+  		&.desc{color:#999;font-size: 12px;}
+  	}
+  	.price-list{margin: 5px 0 20px;margin: 0 auto;
+  		li{height: 72px;line-height: 72px;cursor: pointer;font-size: 24px;font-weight: bold;
+			// &:hover{background:#ccc;}
+       .inner{margin:0 20px;border-bottom: 1px solid #ccc;height: 72px;}
+        p{float: left;line-height: 72px;vertical-align: middle;
+          img{vertical-align: middle;margin-left: 20px;}
+        }
+        .gold{color: #444;width: 100px;text-align: right;}
+        .as{color: #ccc;padding: 0 50px;}
+        .money{color: #ff6905;}
+        &.active{background: #ccc;position: relative;
+          .inner{border-bottom:1px solid transparent;}
+          .as{color: #fff;}
+          // *{color:#fff;}
+        }
+  		}
+  	}
+    .pay-str{text-align: center;padding-top: 20px;}
+  	.btn{display: inline-block;margin:30px auto;width: 140px;height: 40px;line-height: 40px;color: #fff;.border-radius(6px);margin-left: 30px;
+  		i{vertical-align: middle;margin-right:4px;font-size: 26px;}
+      &:hover{opacity: 0.8;filter:alpha(opacity=80);}
+  		&:first-child{margin-left: 0;}
+  	}
+	.panel-recharge{width: 350px;}
+  	.btn-wechat{background: #1baf23;border-bottom: 4px solid #19851e;margin-bottom: 20px;}
+  	.btn-alipay{background: #1dabeb;border-bottom: 4px solid #1b92c7;}
+  	.btn-purchase{background: #ff6905;border-bottom: 4px solid #cf5c0f;letter-spacing: 6px;text-indent: 6px;margin-top: 40px;}
+    .btn-payover{background: #999 ;border-bottom: 4px solid #888;}
+    .btn-problems{background: #ff6905 ;border-bottom: 4px solid #cf5c0f;}
+    .str{line-height:82px;margin-top: 30px; }
+  }
+  .panel-thirdpart{width: 350px;}
+  .panel-overage{width: 270px;padding: 40px 30px;}
+  .panel-wechat{width: 230px;margin:0 auto;}
+  .panel-result{padding:40px 30px;text-align: center;
+    h4{font-size: 24px;margin-bottom: 20px;}
+    p{font-size: 18px;line-height: 26px;
+      i{color:#00c8ff;font-size: 24px;margin:0 4px;}
+    }
+    .btn-recharge, .btn-close{position:static;background: #f60;height: 35px;line-height: 35px;margin-top:30px;color: #fff;}
+  }
+  .panel-success{width: 230px;}
+  .loading{width:16px;height:16px;padding:30px 0;margin:0 auto;background: url("@{commonImgPath}/loading/ajax-loader.gif") no-repeat center;}
+}

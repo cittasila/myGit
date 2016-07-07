@@ -1,0 +1,39 @@
+.ui-trade{
+  .ui-popbox{overflow:visible;}
+  .ui-popmain{.border-radius(5px);}
+  .inner{position:relative;width: 900px;height: 600px;
+    .hd{background:#918698;height: 45px;line-height: 45px;font-size: 16px;text-indent: 2em;color: #fff;}
+  	.tab-nav{
+  		ul{height: 40px;
+			background-image: -webkit-linear-gradient(top, #e7e7e7 0%, #dadada 100%);
+			background-image:      -o-linear-gradient(top, #e7e7e7 0%, #dadada 100%);
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#dadada));
+			background-image:         linear-gradient(to bottom, #e7e7e7 0%, #dadada 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7e7e7', endColorstr='#ffdadada', GradientType=0);
+			filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  		}
+  		.nav-item{float:left;width: 150px;height:30px;.border-radius(4px 4px 0 0);margin: 8px 2px 2px;font-size: 16px;color: #5b4d64;text-align: center;line-height: 30px;cursor: pointer;
+  			background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #ededed 100%);
+			background-image:      -o-linear-gradient(top, #f3f3f3 0%, #ededed 100%);
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ededed));
+			background-image:         linear-gradient(to bottom, #f3f3f3 0%, #ededed 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3f3f3', endColorstr='#ffededed', GradientType=0);
+			filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+			&:hover, &.active{background-image:none;background: #fff;height:32px;margin-bottom: 0;}
+  		}
+  	}
+  	.tab-panel{
+  		.panel-item{padding:30px 35px 0;font-size: 14px;color:#444;
+  			.noitem{text-align: center;}
+  		}
+  		.trade-item{padding:10px 0;border-bottom: 1px solid #e6e6e6;overflow: hidden;
+  			.time{float:left;width: 160px;margin-right:30px;}
+  			.info{float:left;}
+  			.count{float:right;margin-right: 30px;color:#68c100;}
+  			&:last-child{border-bottom: none;}
+
+  		}
+  	}
+    .pagi{position: absolute;width: 100%;bottom:20px;left:0;}
+  }
+}

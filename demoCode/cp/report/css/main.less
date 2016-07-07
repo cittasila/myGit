@@ -1,0 +1,13 @@
+//设计图宽为750px，标准为320px,基数为10px
+
+//放大的倍数
+@enlarge: (750/320) * 12 * 1rem;
+
+@import "g";
+@import "form";
+@import "report";
+@import "pop";
+
+.p-index{
+	.bg{position: fixed;z-index: -1;top:0;left:0;right:0;bottom:0;background: #ffde00 url("@{imgPath}/bg-validation.png") no-repeat;background-size:100%;}
+}

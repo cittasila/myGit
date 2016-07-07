@@ -1,0 +1,55 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>学生作文诊断报告</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
+	
+	
+</head>
+
+<body>
+	<div class="p-index" id="IndexPage"></div>
+	<div class="p-report" id="ReportPage"></div>
+	
+    <script type="text/javascript" src="../../common/scripts/lib/less.js"></script>
+	<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../../bower_components/underscore/underscore.js"></script>
+	<script type="text/javascript" src="../../bower_components/backbone/backbone.js"></script>
+	<script type="text/javascript" src="../../bower_components/doT/doT.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../../bower_components/requirejs/require.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/FusionCharts/JSClass/FusionCharts.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/FusionCharts/JSClass/FusionCharts.HC.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/FusionCharts/JSClass/FusionCharts.HC.Charts.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/Highcharts/js/highcharts.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/Highcharts/js/highcharts-more.js"></script>
+	<script type="text/javascript" src="../../common/scripts/lib/Highcharts/modules/exporting.js"></script>
+    
+    
+	
+   	<script type="text/javascript">
+   		var time = +new Date;
+		require.config({
+			baseUrl : 'scripts',
+			paths : {
+				text: '../../../common/scripts/lib/text',
+				'root-tpl': '../tpl',
+				'root-common': '../../../common/scripts'
+			},
+			shim : {},
+			// urlArgs: "bust=" +  (new Date()).getTime()
+		});
+	</script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	
+</body>
+</html>

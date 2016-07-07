@@ -1,0 +1,38 @@
+/*ui-btn*/
+.ui-btn{display: inline-block;text-align: center;text-decoration: none;border:none;cursor: pointer;font-size: 12px;padding: 0 20px;background-image: none;.border-radius(4px);outline: none;box-sizing: initial;
+	&:hover{text-decoration:none;background-image:none;opacity: 0.8;filter:alpha(opacity=80);}
+}
+	
+
+/*常规按钮*/
+.ui-btn-sdefault,
+.ui-btn-ldefault{background: #f60;color:#fff;}
+.ui-btn-sdefault{height:24px;line-height: 24px;}
+.ui-btn-ldefault{height:48px;line-height: 48px;padding:0 42px;font-size:20px;}
+	.ui-btn-sdefault:hover,
+	.ui-btn-ldefault:hover{color:#fff;background: #F14700;}
+
+/*线框按钮*/
+.ui-btn-scolor,
+.ui-btn-swhite{height:24px;line-height: 24px;}
+.ui-btn-scolor{background: #fff;color:#f60;border:1px solid #f60;}
+.ui-btn-swhite{background: #f6f7fb;color:#666;border:1px solid #e3e7e9;}
+	.ui-btn-scolor:hover,
+	.ui-btn-swhite:hover{background: #f60;color:#fff;}
+
+/*圆形按钮*/
+.ui-btn-lround{background: #fff;overflow:hidden;width:30px;height:60px;padding:0 15px;font-size:14px;border:1px solid #4D9CEC;.border-radius(100%);
+	&:hover{background: #4D9CEC;color:#fff;}
+	i{display:inline-block;font-style:normal;line-height: 18px;
+		&.s{padding-top:20px;}
+		&.l{padding-top:10px;}
+	}
+}
+.ui-btn-sround{background: #fff;width:30px;height:30px;line-height:30px;padding:0;font-size:12px;color:#333;border:1px solid #e4e7ea;.border-radius(100%);}
+.ui-btn-mround{background: #fff;height:30px;line-height:30px;padding:0 10px;font-size:12px;color:#333;border:1px solid #e4e7ea;.border-radius(15px);}
+	.ui-btn-sround:hover,
+	.ui-btn-mround:hover{color:#f60;border:1px solid #f60;}
+.ui-btn-sround-active,
+.ui-btn-mround-active{color:#fff;border:1px solid #f60;background: #f60;
+	&:hover{color:#fff;}
+}

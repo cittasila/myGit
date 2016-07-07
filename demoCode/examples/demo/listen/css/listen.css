@@ -1,0 +1,50 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,button{ padding:0px; margin:0px;}
+ul { list-style:none;}
+img,li{ vertical-align:top; border:none;}
+html,body {font-size: 12px;font-family: "Microsoft YaHei", "SimSun",Arial, Helvetica, sans-serif;margin:0;padding:0;-webkit-text-size-adjust:none;}
+a{text-decoration:none;color:black;outline:none;/*ff*/hide-focus:expression(this.hideFocus=true);/*ie*/} 
+i , em{font-style:normal;}
+textarea{resize: none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+ html, body { width: 100%; height: 100%;  margin: 0px; padding: 0px; }
+
+body{background: url("../image/bg-index.jpg");}
+.w960{width: 960px;margin: 0 auto;}
+.w1000{width:1000px;margin:0 auto;}
+.icon{display: inline-block;vertical-align: middle;}
+
+/* 公用头部 */ 
+.g-header{background: #00577d;height: 108px;}
+.logo{float: left;}
+.logo a{display: block;background: url("../image/logo.png") no-repeat;width: 144px;height: 46px;margin: 15px 0 0;}
+.user-info{position: relative;float: left;_display: inline;margin: 34px 0 0 200px;padding-right: 240px;color: #fff;}
+.thumb{position: absolute;right: 130px;top: -14px;}
+.thumb img{border-radius: 100%;width: 44px;height: 44px;border: 3px solid #fff;}
+.user-control{float: right;margin-top: 32px;}
+.user-control span{vertical-align: middle;}
+.ui-btn{margin-left: 20px;color: #fff;}
+.ui-btn:hover{opacity: 0.9;filter: alpha(opacity=90);text-decoration: none;}
+.icon-solid{cursor: pointer;margin-right: 8px;color:#b6d30c;font-size: 22px;text-shadow:1px 1px 1px #333;}
+// .btn-home .icon-solid{position: relative;top:-2px;}
+.user-exp{position: absolute;right:0;top:-5px;}
+.progress{display: inline-block;width:60px;height:7px;background: #525b7a;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.progress i{display: block;height:7px;.border-radius(5px);}
+.num{font-weight: bold;text-shadow:1px 1px 1px @gray-darker2;margin-left:5px;}
+.exp-row i{background: #ff95ac;max-width: 60px;}
+.level-row i{background: #bcd711;}
+
+
+/* 听力理解 */ 
+.main h1{font-size:18px;font-weight: bold;font-style: italic;color: #00577d;border-left:4px solid #00577d;text-indent: 10px;letter-spacing: 1px;margin-top: 38px;  }
+audio{visibility:hidden}
+.music{width:550px;margin: 20px auto;overflow: hidden; }
+.music .listen-icon{background: url(../image/linsten-1.png) no-repeat;width:52px;height: 52px;cursor: pointer;float: left;position: relative;top: 6px;}
+.music .progressBar{background: url(../image/bar.jpg) repeat-x;width:390px;height: 6px; float: left;margin-left: 15px;}
+.bar{background: #bfd578;height: 5px;width: 0;}
+.music .status{background: url(../image/voice.png) no-repeat;width:70px;height: 31px; float: left;margin-left: 15px;position: relative;top: -26px;}
+.music .status-change{background: url(../image/voice1.gif) no-repeat;}
+.main li{margin-top: 20px;}
+.main h2{font-weight: bold;color: #666;line-height: 40px;font-size: 16px; }
+.main p{line-height: 30px;margin-left: 10px;font-size: 16px;cursor: pointer;}
+.main .choce{color: #ff8635;font-weight: bold;}
+.submit{display: block;width:224px;height:52px;background: url('../image/checkAnswer.png') no-repeat;border: 0 none;margin: 20px auto}

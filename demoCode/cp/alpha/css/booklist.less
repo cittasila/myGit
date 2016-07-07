@@ -1,0 +1,98 @@
+/*书本列表*/ 
+.p-booklist{
+	.main{position: absolute;bottom: 30px;top: 110px;left: 50%;width: 1000px;margin-left: -500px;
+		.mask{position: absolute;left:0;right: 0;top:0;bottom:0;background: #fff;opacity: 0.2;filter:alpha(opacity=20);.border-radius(5px);.box-shadow(0 0 40px #000);z-index:-1;}
+		.book-panel{
+			> .panel-item{position: absolute;left:0;right: 0;top:50px;bottom:0;/*z-index: 1;*/
+				.title{font-size: 18px;color:#fffd4f;padding-bottom:10px;border-bottom:1px solid #fffd4f;margin-bottom: 30px;height: 20px;}
+				h2.title{display:block;}
+				.nav{position:absolute;left:0;top:0;bottom:0;width: 150px;padding:15px;
+					.nav-mask{position: absolute;left:0;right: 0;top:0;bottom:0;background: #fff;opacity: 0.1;filter:alpha(opacity=10);z-index:-1;}
+					
+					.nav-list{position: absolute;top:70px;bottom:15px;left:15px;right:15px;overflow: hidden;
+						li{font-size: 14px;color:#fff;margin-bottom: 10px;cursor: pointer;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;
+							&:hover, &.active{color:#fffd4f;}
+						}
+					}
+				}
+				.panel{position:absolute;left:180px;top:0;bottom:0;right:0;padding:15px 30px;
+					.btn-mybook{position:absolute;right:30px;top:15px;font-size: 14px;
+						i{color:#fffd4f;margin-right: 4px;}
+					}
+					.btn-back{position:absolute;left:785px;top:15px;font-size: 14px;
+						i{color:#fffd4f;margin-right: 4px;}
+					}
+					.panel-list{position: absolute;top:70px;bottom:15px;left:15px;right:15px;overflow: hidden;
+						.light{z-index: 9}
+						li{float: left;position:relative;padding:0 0 20px 40px;font-size: 16px;width: 195px;height: 340px;cursor: pointer;
+
+							h4{color:#fffd4f;margin-bottom: 20px;text-align: center; overflow: hidden;text-overflow:ellipsis;white-space: nowrap;height: 20px;}
+							.img{width: 195px;height: 245px;margin-bottom: 20px;.box-shadow(0 0 20px #333);overflow: hidden;position: relative;
+								img{display:block;width: 195px;height: 245px;}
+								.loading{width: auto;height: auto;margin:100px auto 0;}
+							}
+							
+							p{text-align: center;color: #fff;}
+							.progress{position: absolute;right: 10px;width: 20px;height: 70px;top: 30px;}
+							.progress-ing{background: url("@{imgPath}/icon.png") no-repeat;background-position:0 -140px;}
+							.progress-complete{background: url("@{imgPath}/icon.png") no-repeat;background-position:-27px -140px;}
+						}
+					}
+				}
+			}
+			.panel-booklist{
+				.grade{height: 50px;font-size: 18px;color:#fff;width: 250px;
+					.current-grade{display:inline-block;width: 176px;height:36px;border:1px solid #6b5f74;text-align: center;line-height: 36px;cursor: pointer;}
+					a{color: #fff;}
+					.icon-toggle{margin:0 30px 0 15px;color: #fffb5f;}
+					.icon-expand{display: inline-block;}
+					.icon-shrink{display: none;}
+					&.grade-shrink{width: 100%;
+						.icon-shrink{display: inline-block;}
+						.icon-expand{display: none;}
+						ul{display: inline-block;}
+					}
+					ul{display: none;
+						li{display: inline-block;height:36px;width:36px;text-align:center;margin-right:20px;line-height:36px;border-width:1px;border-style:solid;border-color:#c1bcc4 #766d7c #2c292f;vertical-align: middle;
+							a{display: block;background: #827889;}
+							&.active a, a:hover{background: #fffb5f;color: #000;}
+						}
+						.animate a{position: relative;z-index: 5;}
+								// animation-name: myfirst;animation-duration:2s;animation-delay:2s;animation-iteration-count:1;animation-play-state:running;
+								// -webkit-animation-name: myfirst;-webkit-animation-duration:2s;-webkit-animation-delay:2s;-webkit-animation-iteration-count:1;-webkit-animation-play-state:running;
+								// -moz-animation-name: myfirst;-moz-animation-duration:2s;-moz-animation-delay:2s;-moz-animation-iteration-count:1;-moz-animation-play-state:running;
+								// -ms-animation-name: myfirst;-ms-animation-duration:2s;-ms-animation-delay:2s;-ms-animation-iteration-count:1;-ms-animation-play-state:running;
+								
+							
+						// @keyframes myfirst{
+						// 	0%   {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1); -ms-transform:scale(1);}
+						// 	50%  {transform:scale(1.4);-webkit-transform:scale(1.4);-moz-transform:scale(1.4);-o-transform:scale(1.4); -ms-transform:scale(1.4);}
+						// 	100%  {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1); -ms-transform:scale(1); }
+						// }
+					}
+				}
+				.content{position:absolute;top:60px;bottom:0;left:0;right:0;}
+			}
+			.panel-mylist{
+				.panel{left:0;
+					.panel-list{left:125px;}
+				}
+				
+			}
+		}
+		
+		.book-nav{height: 50px;font-size: 18px;width: 930px;margin:0 auto;
+			.nav-item{display: inline-block;
+				&.active{
+					a{color:#fffb5f;}
+				}
+			}
+			.seperator{width: 1px;background: #84798c;overflow: hidden;height: 30px;margin:0 20px;}
+			.icon-solid{font-size: 22px;margin-right:6px;}
+			span{display: inline-block;vertical-align: middle;}
+		}
+
+	}
+	.nobook{text-align: center;color:#fff;font-size: 14px;}
+	.pop-bg{position: fixed;background: #000;top: 0;bottom: 0;left: 0;right: 0;z-index: 2;.opacity(0.7)}
+}

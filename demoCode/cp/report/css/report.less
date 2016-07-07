@@ -1,0 +1,97 @@
+.p-report{line-height: 1.5rem;
+	.header{position:fixed;height: 80/@enlarge;background: #007dcd;color: #fff;margin-bottom:20/@enlarge;width: 100%;z-index: 100;
+		.logo{color: #fff;}
+		.btn-back{float:left;margin-left:40/@enlarge;margin-top:20/@enlarge;font-size: 50/@enlarge;}
+		.btn-top{float:right;margin-right:30/@enlarge;margin-top:20/@enlarge;font-size: 50/@enlarge;}
+		.img{float:left;display: block;width: 170/@enlarge;height:60/@enlarge;margin:15/@enlarge 0 0 20/@enlarge;background: url("@{imgPath}/logo.png") no-repeat;background-size: 100%;}
+	}
+	h2{position:relative;z-index:1;font-size: 36/@enlarge; color:#333;border-bottom:2px solid #b9c949;padding:0 20/@enlarge;
+		span{display: inline-block;border:2px solid #b9c949;border-bottom:none;padding:3px;}
+		.icon{display: inline-block;width: 30/@enlarge;height: 40/@enlarge;margin-left:4px;background: url("@{imgPath}/icon-title.png") no-repeat;background-size: 100%;}
+	}
+	.nav-list{padding-top: 90/@enlarge;
+		.nav-item{overflow:hidden;display: inline-block;width: 350/@enlarge;height:380/@enlarge;background: #f60;margin: 0 0 15/@enlarge 15/@enlarge;.box-shadow(1px 1px 5px #999);.border-radius(5px);
+			.num{display: block;width: 80/@enlarge;height:80/@enlarge;background-size: 100%!important;margin: 100/@enlarge auto 20/@enlarge;}
+			.txt{display: block;font-size: 36/@enlarge;color: #fff;text-align: center;}
+		}
+		.item-writingDetail{background: #6cccfa;
+			.num{background: url("@{imgPath}/list-num1.png") no-repeat;}
+		}
+		.item-compositionAbility{background: #fbcf00;
+			.num{background: url("@{imgPath}/list-num2.png") no-repeat;}
+		}
+		.item-skillAnalyze{background: #a698f0;
+			.num{background: url("@{imgPath}/list-num3.png") no-repeat;}
+		}
+		.item-writingLevel{background: #fc9385;
+			.num{background: url("@{imgPath}/list-num4.png") no-repeat;}
+		}
+		.item-errorSummary{background: #90ca34;
+			.num{background: url("@{imgPath}/list-num5.png") no-repeat;}
+		}
+		.item-systemComment{background: #00aeff;
+			.num{background: url("@{imgPath}/list-num6.png") no-repeat;}
+		}
+	}
+	.panel-item{margin-top:30/@enlarge;font-size: 24/@enlarge;color: #666;
+		> .inner{padding:20/@enlarge;}
+		table{word-break: break-all;border-collapse: collapse;width: 100%;
+			th, td{border:1px solid #e1e1e1;padding:10/@enlarge;}
+			th{color:#333;background: #f6f4f4;}
+		}
+	}
+	/* 详情 */ 
+	.panel-detail{
+		.info{position:relative;margin-bottom:10/@enlarge;padding-left:90/@enlarge;
+			.label{position: absolute;left:0;top:0;}
+			.txt{display:inline-block;vertical-align:middle;width: 180/@enlarge;height:40/@enlarge;line-height:40/@enlarge;background: #ebebeb;padding-left:10/@enlarge;}
+			.txt-long{width: 500/@enlarge;}
+			.txt-title{height: auto;vertical-align: top;}
+		}
+		.content{
+			p{margin-bottom: 10/@enlarge;
+				&.title{text-align: center;}
+			}
+			.label{margin-bottom:10/@enlarge;}
+			.content-info{height:40/@enlarge;line-height:40/@enlarge;background: #ebebeb;margin-bottom:10/@enlarge;}
+			.words{display: inline-block;width: 200/@enlarge;}
+			.time{display: inline-block;width: 290/@enlarge;}
+		}
+	}
+
+	/* 能力评估 */
+	.panel-ability{
+		
+	}
+
+	/* 写作水平 */
+	.panel-level{
+		.level{position: relative;margin-top: 10/@enlarge;}
+		.img{width: 100%;height: 60px;background: url("@{imgPath}/level.png") no-repeat;background-size: 100%;}
+		.point{position: absolute;top:0;
+			.caret{
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				line-height: 0;
+				overflow: hidden;
+				border: 10/@enlarge solid transparent;
+				left:-5/@enlarge;
+			}
+			.txt{display:block;width:80/@enlarge;text-align:center;line-height:40/@enlarge;height:40/@enlarge;.border-radius(4px);color: #fff;margin-left:-40/@enlarge;}
+		}
+		.class-point{
+			.caret{border-top-color: #09f;top: 40/@enlarge;}
+			.txt{background: #09f;}
+		}
+		.my-point{top: 80/@enlarge;
+			.caret{border-bottom-color: #f60;top: -15/@enlarge;}
+			.txt{background: #f60;}
+		}
+	}
+
+	.panel-ability{position: relative;z-index: 1;
+
+	}
+}

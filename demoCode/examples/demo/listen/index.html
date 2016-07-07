@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<title>听力理解</title>
+		<link rel="stylesheet" type="text/css" href="css/listen.css">
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/listen.js"></script>
+		
+	</head>
+	<body >
+		<div class="g-header">
+			<div class="w960">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<div class="user-info">
+					<span>欢迎您，牛津学校 六年级 2班 陈天浩！</span>
+					<a href="javascript:;" class="thumb">
+						<img src="./image/girl.jpg">
+					</a>
+					<div class="user-exp">
+						<div class="level-row">
+							<span class="progress"><i style="width:${session.levelPer}px;"></i></span>
+							<span class="num">LV 0</span>
+						</div>
+						<div class="exp-row">
+							<span class="progress"><i style="width:${session.integralPer}px;"></i></span>
+							<span class="num">EXP 1882</span>
+						</div>
+					</div>
+				</div>
+				<div class="user-control">
+					<a href="javascript:;" class="ui-btn btn-home">
+						<img src="./image/home.png">
+						<span>主页</span>
+					</a>
+					<a href="javascript:;" class="ui-btn btn-logout">
+						<img src="./image/out.png">
+						<span>退出</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main w960">
+			<h1>听力理解 Listening comprehension</h1>
+			<div class="music">
+				<audio controls="controls">
+				    <source src="./image/Room.mp3" type="audio/mpeg" preload="preload" >Your browser does not support the audio tag.
+				</audio>
+				<div class="listen-icon btn_play"></div>
+				<div class="progressBar">
+					<div class="bar"></div>
+				</div>
+				<div class="status"></div>
+			</div>
+			<ul>
+				<li class="main-li">
+					<h2>1. How are the walls in Annie's new room like the walls in her old room?</h2>
+					<p>A They are the same color.</p>
+					<p>B They have space for extra posters.</p>
+					<p class="choce">C They have large windows.</p>
+					<p>D They need to be painted.1. How are the walls in Annie's new room like the walls in her old room?</p>
+				</li>
+				<li class="main-li">
+					<h2>2. Which of these is the same in Annie's new room as it was in her old room?</h2>
+					<p>A the extra posters</p>
+					<p>B the desk</p>
+					<p class="choce">C the quilt</p>
+					<p>D the windows</p>
+				</li>
+				<li class="main-li">
+					<h2>3. Which of these tells one way that Annie's new room is different from her old room?</h2>
+					<p class="choce">A The new room is square.</p>
+					<p>B The new room is bigger.</p>
+					<p>C The new room is painted green.</p>
+					<p>D The new room is empty.</p>
+				</li>
+			</ul>
+			<input type="submit" value="" class="submit">
+		</div>
+	</body>
+</html>
